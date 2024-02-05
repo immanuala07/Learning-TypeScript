@@ -1,26 +1,38 @@
-function add (n1: number, n2: number, showResult: boolean, phrase: string) {
-	// if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-	// 	throw new Error('Incorrect input!');
-	// }
+// Typescript Object
+/*
+  const person = {
+    name: string;
+    age: number;
+  } = {
+    name: "Max",
+    age: 30
+  };
+*/
 
-	const result = n1 + n2;
-	if (showResult) {
-		/*
-		Below statement considers all the operands as strings,
-		and gives wrong ouput for numerical calculation,
-		so we have to do numeric calculations above the below statement
-		*/
-		// console.log(phrase + n1 + n2);
+// Typescript Nested Object & Types
+/*
+  const product = {
+    id: string;
+    price: number;
+    tags: string[];
+    details: {
+      title: string;
+      description: string;
+    }
+  } = {
+    id: "abc1",
+    price: 12.99,
+    tags: ['great-offer', 'hot-and-new'],
+    details: {
+      title:"Red Carpet",
+      description:`A great carpet - almost brand new!`
+    }
+  };
+*/
 
-		console.log(phrase + result);
-	} else {
-		return n1 + n2;
-	}
-}
+const person = {
+	name: "Max",
+	age: 30
+};
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultPhrase = 'Result is: ';
-
-add(number1, number2, printResult, resultPhrase);
+console.log(person.name);
