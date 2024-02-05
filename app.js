@@ -34,6 +34,13 @@ var person = {
     hobbies: ["Sports", "Cooking"],
     role: [2, "Author"]
 };
+/*
+Tuples in TypeScript supports various operations like pushing a new item,
+removing an item from the tuple, etc.
+*/
+// person.role.push('admin');
+// person.role[1] = "10";
+// person.role = [0, "admin", "user"];
 var favoriteActivities;
 favoriteActivities = ['Sports'];
 console.log(person.name);
