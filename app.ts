@@ -32,7 +32,18 @@
 
 const person = {
 	name: "Max",
-	age: 30
+  age: 30,
+  hobbies: ['Sports','Cooking']
 };
 
+let favoriteActivities: string[];
+favoriteActivities = ['Sports'];
+
 console.log(person.name);
+
+for (const hobby of favoriteActivities) {
+  console.log(hobby.toUpperCase()); // Typescript inference allows the string within the array to use toUpperCase.
+  
+  // Typescript inference doesn't allows the string values within the array to use map function.
+  // console.log(hobby.map()); // !!! ERROR !!!
+}
