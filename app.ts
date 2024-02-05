@@ -30,10 +30,21 @@
   };
 */
 
-const person = {
-	name: "Max",
+const person:{
+  name: string;
+  age: number;
+  hobbies: string[];
+  /*
+  Tuples - A tuple is a typed array with a pre - defined length and types for each index.
+  Tuples are great because they allow each element in the array to be a known type of value.
+  Tuples in TypeScript supports various operations like pushing a new item, removing an item from the tuple, etc.
+  */
+  role: [number, string];
+} = {
+  name: "Max",
   age: 30,
-  hobbies: ['Sports','Cooking']
+  hobbies: ["Sports", "Cooking"],
+  role: [2, "Author"]
 };
 
 let favoriteActivities: string[];
