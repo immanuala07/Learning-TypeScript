@@ -71,7 +71,7 @@ removing an item from the tuple, etc.
 
 // person.role = [0, "admin", "user"];
 
-let favoriteActivities: any[];
+let favoriteActivities: string[];
 favoriteActivities = ["Sports"];
 
 console.log(person.name);
